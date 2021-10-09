@@ -1,26 +1,41 @@
-# Quasar App (chat)
+# simple-chat-vue
 
-A Quasar Framework app
+Develop a simple chat between two clients.
+• Quasar framework and VueJS are required.
+• Use only UI component that Quasar framework provides.
+• Use deepstream to establish a communication channel between two clients.
 
-## Install the dependencies
+## Install the dependencies of project
 ```bash
-npm install
+npm i
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+## Install deepstream
+
+Before run the app install deepstream https://deepstream.io/ and run this comand:
+
+```bash
+./deepstream start
+```
+deepstream should run on the port localhost:6020
+
+### Start the app in development mode
 ```bash
 quasar dev
 ```
 
-### Lint the files
-```bash
-npm run lint
-```
+### Ussage
 
-### Build the app for production
-```bash
-quasar build
-```
+The app has two forms, login and registration  that work with firebase simple autentication, you can register your email and password or use this:
 
-### Customize the configuration
-See [Configuring quasar.conf.js](https://v2.quasar.dev/quasar-cli/quasar-conf-js).
+```bash
+ {
+     email: ale@simple.com
+     password: 123456
+ },
+ {
+     email: ale2@simple.com
+     password: 123456
+ }
+```
+It is important to run the application on a different port for each client
