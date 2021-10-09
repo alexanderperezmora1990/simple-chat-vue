@@ -10,7 +10,7 @@
             <span class="alert q-mt-md" v-if="requireds[0]">
                 required*
             </span>
-            <q-input label="password" v-model="password"/>
+            <q-input label="password" type="password" v-model="password"/>
             <span class="alert q-mt-md" v-if="requireds[1]">
                 required*
             </span>
